@@ -1,6 +1,6 @@
 <html>
 <body>
-    <h2>Jersey RESTful Web Application!</h2>
+    <h2>Doctor API!</h2>
    
     for more information on Jersey!
 </body>
