@@ -60,10 +60,10 @@ public class DoctorAPI extends HttpServlet {
 		Map paras = getParasMap(request); 
 		 
 		 String output = dr.update(paras.get("hidItemIDSave").toString(),
-				 paras.get("doctorName").toString(),
+				 paras.get("doctorName").toString().replace("+", ""),
 				 paras.get("ddlsection").toString(),
 				 paras.get("contact_no").toString(),
-				 paras.get("email").toString());
+				 paras.get("email").toString().replace("%40", "@"));
 		 
 		 response.getWriter().write(output); 
 		 System.out.println(">>>>>>>>>>>");
